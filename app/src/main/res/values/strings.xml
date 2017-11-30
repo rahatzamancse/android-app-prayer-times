@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PrayerTimes</string>
+    <string name="fazr">Fazr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="default_time">00:00</string>
+</resources>

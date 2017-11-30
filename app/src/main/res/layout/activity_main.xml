@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="tanim.learner.com.prayertimes.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/app_name"
+        android:background="@android:color/holo_red_light"/>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="03 Nov, 2017"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/fazr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/fazr"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dhuhr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/dhuhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dhuhr"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/asr"
+        app:layout_constraintStart_toStartOf="@+id/fazr"
+        app:layout_constraintTop_toBottomOf="@+id/fazr" />
+
+    <TextView
+        android:id="@+id/asr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asr"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/maghrib"
+        app:layout_constraintStart_toStartOf="@+id/dhuhr"
+        app:layout_constraintTop_toBottomOf="@+id/dhuhr" />
+
+    <TextView
+        android:id="@+id/maghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maghrib"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/isha"
+        app:layout_constraintStart_toStartOf="@+id/asr"
+        app:layout_constraintTop_toBottomOf="@+id/asr" />
+
+    <TextView
+        android:id="@+id/isha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isha"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/maghrib"
+        app:layout_constraintTop_toBottomOf="@+id/maghrib" />
+
+    <TextView
+        android:id="@+id/fazr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="@string/default_time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/fazr"
+        app:layout_constraintTop_toTopOf="@+id/fazr" />
+
+    <TextView
+        android:id="@+id/dhuhr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fazr_time"
+        app:layout_constraintTop_toTopOf="@+id/dhuhr" />
+
+    <TextView
+        android:id="@+id/asr_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/dhuhr_time"
+        app:layout_constraintTop_toTopOf="@+id/asr" />
+
+    <TextView
+        android:id="@+id/maghrib_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/asr_time"
+        app:layout_constraintTop_toTopOf="@+id/maghrib" />
+
+    <TextView
+        android:id="@+id/isha_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_time"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/maghrib_time"
+        app:layout_constraintTop_toTopOf="@+id/isha" />
+
+    <ToggleButton
+        android:id="@+id/fazr_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fazr_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fazr_time"
+        app:layout_constraintTop_toTopOf="@+id/fazr_time" />
+
+    <ToggleButton
+        android:id="@+id/dhuhr_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/dhuhr_time"
+        app:layout_constraintStart_toStartOf="@+id/fazr_alarm"
+        app:layout_constraintTop_toTopOf="@+id/dhuhr_time" />
+
+    <ToggleButton
+        android:id="@+id/asr_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/asr_time"
+        app:layout_constraintStart_toStartOf="@+id/dhuhr_alarm"
+        app:layout_constraintTop_toTopOf="@+id/asr_time" />
+
+    <ToggleButton
+        android:id="@+id/magrib_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/maghrib_time"
+        app:layout_constraintStart_toStartOf="@+id/asr_alarm"
+        app:layout_constraintTop_toTopOf="@+id/maghrib_time" />
+
+    <ToggleButton
+        android:id="@+id/isha_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/isha_time"
+        app:layout_constraintStart_toStartOf="@+id/magrib_alarm"
+        app:layout_constraintTop_toTopOf="@+id/isha_time" />
+
+
+</android.support.constraint.ConstraintLayout>

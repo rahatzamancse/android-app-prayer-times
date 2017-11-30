@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/name_container"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    android:layout_marginBottom="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+
+    android:paddingBottom="10dp"
+
+    android:background="#FFFFFF"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/allah_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Allah Name"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Transliteration :"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/allah_transliteration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:text="Transliteration"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Meaning :"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/allah_meaning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:text="The beneficent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
